@@ -1,0 +1,205 @@
+/*
+1. HTML Tags - No spl char needed
+2. Class name.- DOT (.) needed
+3. ID name - Hash (#) needed.
+*/
+
+body {
+  background-color: #fa8072;
+}
+
+header {
+  background-color: #ffdab9;
+  background: url(https://i.pinimg.com/originals/3b/20/c1/3b20c1d8087a560f516440fd9df160de.jpg);
+  border-top: 9px solid #ffe4e1;
+  border-left: 9px solid #ffe4e1;
+  border-right: 9px solid #ffe4e1;
+  border-bottom: 9px solid #ffe4e1;
+  color: #772a42;
+  text-align: Center;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  animation: lightSpeedInLeft 3s ease-out forwards;
+}
+@keyframes lightSpeedInLeft {
+  from {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+nav {
+  background-color: #5F9EA0;
+  padding: 10px;
+  border-radius: 10px;
+  animation: slideLeft 4s ease-out;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+  cursor: pointer;
+}
+
+nav ul li a {
+  color: #a3e7ff;
+  text-decoration: underline 1px solid #40e0d0;
+  text-underline-offset: 5px;
+  transition: 0.2s;
+  margin: 15px;
+}
+
+/*HOVER - Taking mouse on top of something*/
+
+nav ul li a:hover {
+  /*-color: #fff;*/
+  color: #fff0f5;
+  font-size: 18px;
+  border: 2px;
+  border-style: solid;
+  border-color: #bbe9fa;
+  border-radius: 10px;
+  padding: 4px;
+}
+
+#toggle-theme {
+  position: fixed;
+  top: 39px;
+  right: 25px;
+  background-color: #ffa07a;
+  color: #fff;
+  border-radius: 9px;
+  animation: float 5s infinite;
+}
+
+.style1 {
+  background-color: #fff;
+  padding: 3rem;
+  border-radius: 9px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.4);
+  /* h-offset (0) ,v-offset (0) ,blur-radius(50px), spread-radius(None), color (put it using rgba values)*/
+  /*OPAQUE - TRANSPARENT*/
+}
+
+.style1 h2 {
+  color: #b22222;
+  /*text-align: center;*/
+  border-bottom: 3px solid #a95c68;
+  padding: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.style1 h3 {
+  color: #401623;
+}
+
+#admin-login {
+  display: none;
+}
+
+#user-responses {
+  display: none;
+}
+
+.dark-theme {
+  background-color: #1a1a1a;
+}
+
+.dark-theme header {
+  background-color: #34495e;
+  background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRlwKWGpQLL80xzir3DzJlNSm4hcEVXnKSj_w&s);
+  color: #fff;
+  border-top: 10px solid #b5929d;
+  border-left: 10px solid #b5929d;
+  border-right: 10px solid #b5929d;
+}
+
+.dark-theme nav {
+  background-color: #2c0f18;
+}
+
+.dark-theme nav ul li a {
+  color: #ffb3d9;
+}
+
+.dark-theme nav ul li a:hover {
+  color: #ffc9e3;
+  border-color: #ffb3d9;
+}
+
+.dark-theme #toggle-theme {
+  background-color: #c55a7d;
+}
+
+.dark-theme .style1 {
+  background-color: #2c3e50;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.8);
+}
+
+.dark-theme .style1 h2 {
+  color: #ff6b9d;
+  border-bottom-color: #ff85b3;
+}
+
+.dark-theme .style1 h3 {
+  color: #ffb3d9;
+}
+
+.dark-theme .style1 p {
+  color: #ecf0f1;
+}
+
+.dark-theme .style1 a {
+  color: #ffb3d9;
+}
+
+.dark-theme input,
+.dark-theme textarea {
+  background-color: #34495e;
+  color: #ecf0f1;
+  border-color: #555;
+}
+
+.dark-theme label {
+  color: #ecf0f1;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes slideLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}
+
+@keyframes slideRight {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

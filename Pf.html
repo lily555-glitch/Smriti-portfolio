@@ -1,0 +1,151 @@
+<html>
+
+<head>
+  <title> My Portfolio </title>
+  <link rel="stylesheet" href="Pf.css">
+</head>
+
+<body>
+  <header>
+
+    <h1> Smriti Nath </h1>
+
+    <h3> Web Developer & UI/UX designer </h3>
+  </header>
+
+  <main>
+    <nav>
+      <ul>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#Rc">Relevant Coursework</a></li>
+        <li><a href="Am">About me</a></li>
+        <li><a href="aoi">Area of interest</a></li>
+        <li><a href="prjs">Projects</a></li>
+        <li><a href="#contact-me">Contact Me</a></li>
+        <li><a href="#admin-login" onClick="show_admin_login()">Admin Login</a></li>
+      </ul>
+    </nav>
+
+    <button id="toggle-theme">Dark theme</button>
+    <p>
+
+    <section class="style1" id="education">
+      <h2 id="animateEdu">Education</h2>
+
+      <h3>Pillai HOC College of Engineering & Technology (Autonomous)</h3>
+      <p>B.E IT</p>
+      <p>2028</p>
+
+      <h3>St Marys Convent High School & Junior College</h3>
+      <p>PCM</p>
+      <p>2024</p>
+
+    </section>
+
+    <section class="style1" id="Rc">
+      <h2>Relevant Coursework:</h2>
+
+      <h3>Learning Zone</h3>
+      <p>Data Structures.</p>
+      <p>Web Technologies</p>
+      <p>Database Management Systems</p>
+      <p>Operating Systems</p>
+
+    </section>
+
+    <section class="style1" id="Am">
+      <h2>About Me</h2>
+      <p>
+        I am a second-year Information Technology engineering student with a strong interest in user-centered design and front-end web development. I focus on building clean, responsive, and visually structured digital experiences.
+
+        Alongside my technical studies, I explore UI/UX, branding, and modern web technologies to build practical and visually appealing solutions.
+
+        I believe in combining logic with creativity to design interfaces that are both functional and engaging.</p>
+
+    </section>
+
+    <section class="style1" id="prjs">
+      <h2>Projects</h2>
+
+      <h3>Personal Portfolio Website</h3>
+      <p>Designed and developed a responsive personal portfolio website using HTML, CSS, and JavaScript.</p>
+      <br>
+      <h3>UI Redesign Concept</h3>
+      <p>Designed wireframes and mockups using Figma.</p>
+      <br>
+      <h3>Logo Design Collection</h3>
+      <p>Designed minimal logo concepts for small brands and personal projects.</p>
+      <br>
+    </section>
+
+    <section class="style1" id="aoi">
+
+      <h2>Area of Interest</h2>
+
+      <p>Front-End Development</p>
+      <p>UI/UX Research</p>
+      <p>Branding & Identity Design</p>
+
+    </section>
+
+    <section class="style1" id="contact-me">
+      <h2>Contact me</h2>
+      <form id="contact-form">
+        <div>
+          <label> Name: </label>
+          <input type="text" placeholder="enter name..." id="input_name">
+        </div>
+
+        <div>
+          <label> Email: </label>
+          <input type="text" id="input_email">
+        </div>
+
+        <div>
+          <label> Message: </label>
+          <textarea placeholder="please enter your message" id="input_msg"></textarea>
+        </div>
+        <p id="confirm-response"></p>
+        <button type="submit"> Send</button>
+
+      </form>
+      <h3> For further query join me through linkedIn <a href="https://www.linkedin.com/in/smriti-nath-173b393b0/"> Click Here 😊</a></h3></section> </h3>
+    </section>
+
+    <section class="style1" id="admin-login">
+      <h2>Admin Login</h2>
+      <form id="admin-form" style="background: #ffffff; padding: 30px; border-radius: 12px; box-shadow: 0 4px 15px rgba(0,0,0,0.1); border-top: 8px solid #9F697A; max-width: 320px; font-family: sans-serif;">
+
+        <h2 style="margin-top: 0; color:#9F697A; font-size: 1.5rem; text-align: center;">Login</h2>
+
+        <div style="margin-bottom: 15px;">
+          <label style="display: block; margin-bottom: 5px; font-weight: 600; color: #555;">Username</label>
+          <input type="text" placeholder="enter username..." id="input_user" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; outline: none;">
+        </div>
+
+        <div style="margin-bottom: 20px;">
+          <label style="display: block; margin-bottom: 5px; font-weight: 600; color: #555;">Password</label>
+          <input type="password" placeholder="enter password..." id="input_pass" style="width: 100%; padding: 10px; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; outline: none;">
+        </div>
+
+        <button type="submit" style="width: 100%; padding: 12px; background-color: #6B253B; color: white; border: none; border-radius: 6px; font-weight: bold; cursor: pointer; font-size: 16px;">
+          Login
+        </button>
+
+      </form>
+    </section>
+
+    <section class="style1" id="user-responses">
+      <h2>User Responses</h2>
+
+      <div id="user-messages">
+
+      </div>
+    </section>
+
+  </main>
+
+  <script src="Pf.js"></script>
+</body>
+
+</html></html>
